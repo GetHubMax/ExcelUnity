@@ -4,13 +4,14 @@
 
 It is an editor addon for Unity that uses an excel file to generate prefabs. Prefabs are assets templates used in Unity. 
 
+The excel format so far tested is Ods.
 
 ## What is Unity?
 Unity is a game engine. Here is the link https://unity3d.com/
 
 
 ## What is GemBox
-GemBox is a C# excelsheet library that made this possible here is a link http://www.gemboxsoftware.com/
+GemBox is a C# excelsheet library that made this possible. here is a link http://www.gemboxsoftware.com/
 
 
 ## Using Excel Unity
@@ -22,9 +23,12 @@ There is two components, a template gameobject and excel file. In addition there
 The excel file must follow the following rules.
 
 
-The first row is the names of the methods. 
+The first row is the names of the methods.
+
 The first cell in each following row is used to name the prefab.
+
 Each cell in the row is applied to its corresponding column field.
+
 Any gaps between rows will end the program.
 
 
@@ -57,6 +61,15 @@ Prefab Name/Value  Type 2 Value  Type 3 Value  Type 4 Value
 
 
 The template object must have all the methods in 
+
+## Setup
+
+1. Download GemBox.SpreadSheet
+2. Make a Unity Project(See Unity)
+3. Make a Editor and Plugins folder in the Unity Project Assets folder
+4. Copy GemBox.SpreadSheet in the Pigun folder. (Only Net20)
+5. Copy in ExcelUnityWindow.cs into Editor folder.
+
 
 
 ## Errors and Future Goals 
