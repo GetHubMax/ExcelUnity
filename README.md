@@ -35,7 +35,7 @@ Any gaps between rows will end the program.
 The template Game Object is the base on which the excel work on, and need a method that's the same name as the column heads that take one parameter that allows the values of that column 
 
 
-Template Game Object
+###Template Game Object
 
 
 Method 1 (String name)//Need to be string for name of Prefab. 
@@ -47,7 +47,7 @@ Method 3(Type 3 v)
 Method 4(Type 4 v)
 
 
-
+## Excel File Format
 
 
 
