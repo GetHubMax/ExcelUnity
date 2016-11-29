@@ -75,7 +75,7 @@ The template object must have all the methods in
 ## Errors and Future Goals 
 
 
--[ ] At the moment any cell with a formula return a string instead of the calculated value. There is a method call that should have fixed this but isn’t. More research is needed.
+- [ ] At the moment any cell with a formula return a string instead of the calculated value. There is a method call that should have fixed this but isn’t. More research is needed.
 
 
--[ ] Create a way for GameObject Template to not need the “name” method.  
+- [ ] Create a way for GameObject Template to not need the “name” method.  
