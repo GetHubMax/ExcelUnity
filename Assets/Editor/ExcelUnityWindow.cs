@@ -13,7 +13,7 @@ namespace Game
 	//
 	public class ExcelUnity:EditorWindow	{
 
-		//Importer importer;
+
 		string file ="path";
 		string folder ="Assets";
 		GameObject tmp;
@@ -62,6 +62,7 @@ namespace Game
 
 			//first row for names of vaules
 			ExcelWorksheet sheet = ef.Worksheets[0];
+			//sheet.Calculate();//should work but doesn't
 			ExcelRow row = sheet.Rows[0];	
 
 			//get name of 
@@ -96,13 +97,11 @@ namespace Game
 					if (x >= size) {
 						break;
 					}
-					
+					cell.Calculate();
 					gb.SendMessage (keys[x], cell.Value);
-					
-
 					x++;
 				}
-				//error? why
+
 				PrefabUtility.ReplacePrefab (gb, prefab, ReplacePrefabOptions.ConnectToPrefab);
 				Debug.Log ("prebab: "+name+" done" );
 			}
