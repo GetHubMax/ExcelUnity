@@ -75,7 +75,7 @@ The template object must have all the methods in
 ## Errors and Future Goals 
 
 
-- [x] ~~At the moment any cell with a formula return a string instead of the calculated value.~~ Fixed Needed to convert cell tp stringValue then formula, then calcutate.
+- [x] ~~At the moment any cell with a formula return a string instead of the calculated value.~~ Needed to convert cell tp stringValue then formula, then calcutate.
 
 - [ ] Create a way for GameObject Template to not need the “name” method.  
 
