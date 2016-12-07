@@ -79,3 +79,10 @@ The template object must have all the methods in
 
 
 - [ ] Create a way for GameObject Template to not need the “name” method.  
+
+
+- [ ] Add usualful errors.
+
+
+- [ ] Support a script language that is added to Excel File that can tells Unity now to process the file.
+
