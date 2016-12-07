@@ -91,12 +91,14 @@ namespace Game
 				string name = rows.Cells [0].StringValue;
 				Object prefab = PrefabUtility.CreateEmptyPrefab (folder+"/"+name+".prefab");
 				//this is the error
-				//GameObject gb = (GameObject) GameObject.Instantiate<GameObject>((GameObject)tmp);//Need more casting?
-				GameObject gb = (GameObject) GameObject.Instantiate<GameObject>((GameObject)tmp);//Need more casting
+				GameObject gb = (GameObject) GameObject.Instantiate<GameObject>((GameObject)tmp);//All the casting to be safe
 				foreach(ExcelCell cell in rows.AllocatedCells){
 					if (x >= size) {
 						break;
 					}
+
+
+					cell.Formula =cell.StringValue;
 					cell.Calculate();
 					gb.SendMessage (keys[x], cell.Value);
 					x++;
