@@ -13,6 +13,8 @@ Unity is a game engine. Here is the link https://unity3d.com/
 ## What is GemBox
 GemBox is a C# excelsheet library that made this possible. here is a link http://www.gemboxsoftware.com/
 
+## BUG
+At the moment buiding form unity with the GemBox inside it will throw an error.
 
 ## Using Excel Unity
 
