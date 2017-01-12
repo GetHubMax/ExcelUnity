@@ -13,8 +13,8 @@ Unity is a game engine. Here is the link https://unity3d.com/
 ## What is GemBox
 GemBox is a C# excelsheet library that made this possible. here is a link http://www.gemboxsoftware.com/
 
-## BUG
-At the moment buiding form unity with the GemBox inside it will throw an error.
+
+
 
 ## Using Excel Unity
 
@@ -71,7 +71,7 @@ The template object must have all the methods in
 3. Make a Editor and Plugins folder in the Unity Project Assets folder
 4. Copy GemBox.SpreadSheet in the Pigun folder. (Only Net20)
 5. Copy in ExcelUnityWindow.cs into Editor folder.
-
+6. In Edit> Project Settings > Player> Optimization, set compatibility form ".net 2.0 subset" to ".net 2.0". This is a bandage to fix an error, see Build error belong. 
 
 
 ## Errors and Future Goals 
@@ -86,4 +86,7 @@ The template object must have all the methods in
 
 
 - [ ] Support a script language that is added to Excel File that can tells Unity now to process the file.
+
+
+- [ ] Buid Error: When building, Unity trys to link in the dll files of Gem.Box, and throws a error that stops the build. Because Gem.Box is only used in the editor it shouldn't have any problems at runtime. So I need away to tell Unity that. Or find another solution. 
 
